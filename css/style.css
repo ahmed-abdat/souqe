@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/back.png");
+  background-color: black;
   background-position: center;
   background-size: cover;
 }
