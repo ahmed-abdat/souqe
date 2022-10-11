@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop</title>
+
+    <!-- font awesome cdn link  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="./css/all.min.css"> -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="home.html" class="logo">
+        <i class="fas fa-shopping-basket"></i> سوقك
+      </a>
+
+      <nav class="navbar">
+        <a href="home.html">الرئيسية</a>
+        <a href="shop.html">تسوق</a>
+        <a href="about.html">من نحن</a>
+        <a href="review.html">تقيمنا</a>
+        <a href="blog.html">مدونتنا</a>
+        <a href="contact.html">تواصل معنا</a>
+      </nav>
+
+      <ul class="icons">
+        <li id="menu-btn"><i class="fas fa-bars"></i></li>
+        <li id="search-btn"><i id="search-btn" class="fas fa-search"></i></li>
+        <li id="cart-btn"><i class="fas fa-shopping-cart"></i></li>
+        <li id="login-btn"><i id="login-btn" class="fas fa-user"></i></li>
+      </ul>
+
+      <form action="" class="search-form">
+        <input type="search" placeholder="إبحث هنا..." id="search-box" />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div id="defaulte" dir="ltr" class="defaulte">
+          <div class="content" >
+            <h3 style="padding: 0;font-size: 1.5rem;"><i class="fas fa-shopping-cart" style="color: #bac34e;"></i> لإضافة المنتج إلى سلة الشراء قم بضغض على </h3>
+          </div>
+        </div>
+        <h3 class="total active">المجموع : <span></span></h3>
+        <a href="#" class="btn active">أضف إلى السلة</a>
+      </div>
+      <!-- login to your account -->
+      <div action="" class="login-form" dir="rtl">
+        <h3>تسجيل الدخول</h3>
+        <div id="check"></div>
+        <input type="text" id="userLogin" placeholder="أدخل بريدك الإلكتروني" class="box" />
+        <input type="password" id="passLogin" placeholder="أدخل كلمة السر" class="box" />
+        <div class="remember">
+          <input type="checkbox"  id="remember-me" />
+          <label for="remember-me"> تذكرني </label>
+        </div>
+        <button id="btnLogin" class="btn"> تسجيل الدخول </button>
+        <p>نسيت كلمة السر<a href="#">إضغض هنا </a></p>
+        <p>ليس لديك حساب <span id="creatAcount">أحصل على واحد </span></p>
+      </div>
+      <!-- creat new account -->
+      <div  class="logup-form" dir="rtl">
+        <h3>مستخدم جديد</h3>
+        <input type="text" id="user" placeholder="أدخل إسمك الكامل" class="box" />
+        <div id="checknew"></div>
+        <input type="email" id="userEmail" placeholder="أدخل بريدك الإلكتروني" class="box" />
+        <div id="checkEmail"></div>
+        <input type="password" name="pass" id="pass" maxlength="8" placeholder="أدخل كلمة السر" class="box" />
+        <div id="checkpass"></div>
+        <button id="btn" class="btn"> سجل لآن </button>
+        <p>لديك حساب با الفعل ؟<span class="btnlogup"> سجل دخولك</span></p>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <div class="heading">
+      <h1>متجرك</h1>
+      <p><a href="home.html">الرئيسية >></a> تسوق</p>
+    </div>
+
+    <section class="category">
+      <h1 class="title">
+        <span>تصنيفاتنا</span> <a href="#" id="add">إظهار لكل >></a>
+      </h1>
+
+      <div class="box-container">
+        <a href="#" class="box cat active">
+          <img src="image/cat-1.png" alt="" data-cat="fruits" />
+          <h3 data-cat="fruits">ملابس رجالية</h3>
+        </a>
+
+        <a href="#" class="box cat">
+          <img src="image/cat-2.png" alt="" data-cat="vegetables" />
+          <h3 data-cat="vegetables">ملابس نسائية</h3>
+        </a>
+
+        <a href="#" class="box cat">
+          <img src="image/cat-3.png" alt="" data-cat="spices" />
+          <h3 data-cat="spices">إكسسوارات</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="products" id="product">
+      <h1 class="title">
+        <span>منتجاتنا</span>
+        <a href="#product" id="allProduct">إظهار لكل >></a>
+      </h1>
+
+      <div class="box-container main" dir="ltr"></div>
+    </section>
+
+    <section class="addproduct"></section>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>روابط سريعة</h3>
+          <a href="home.html"> <i class="fas fa-arrow-left"></i> الرئيسية</a>
+          <a href="shop.html"> <i class="fas fa-arrow-left"></i> تسوق</a>
+          <a href="about.html"> <i class="fas fa-arrow-left"></i> من نحن</a>
+          <a href="review.html"> <i class="fas fa-arrow-left"></i> تقيمنا </a>
+          <a href="blog.html"> <i class="fas fa-arrow-left"></i> مدونتنا</a>
+          <a href="contact.html">
+            <i class="fas fa-arrow-left"></i> تواصل معنا</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>روابط إضافية</h3>
+          <a href="#"> <i class="fas fa-arrow-left"></i> طلبيتي</a>
+          <a href="#"> <i class="fas fa-arrow-left"></i> المفضلة </a>
+          <a href="#"> <i class="fas fa-arrow-left"></i> قائمة الرغبات </a>
+          <a href="#"> <i class="fas fa-arrow-left"></i> حسابي </a>
+          <a href="#"> <i class="fas fa-arrow-left"></i> شروط لإستخدام </a>
+        </div>
+
+        <div class="box">
+          <h3>تابعونا على</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> فيسبوك </a>
+          <a href="#"> <i class="fab fa-twitter"></i> تويتر </a>
+          <a href="#"> <i class="fab fa-instagram"></i> إنستغرام </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> لينكدإن </a>
+          <a href="#"> <i class="fab fa-pinterest"></i> بينترس </a>
+        </div>
+
+        <div class="box">
+          <h3>مستخدم جديد</h3>
+          <p>إشترك للتوصل بـأحدث التحديثات</p>
+          <form action="">
+            <input type="email" placeholder="أدخل بريدك لإلكتروني" />
+            <input type="submit" value="إشترك" class="btn" />
+          </form>
+          <img src="image/payment.png" class="payment" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="credit">جميع الحقوق محفوظة 2022 &copy; </section>
+
+    <!-- footer section ends -->
+
+    <!-- font awsome js -->
+    <script src="./js/all.min.js"></script>
+    <!-- shop js file -->
+    <script src="./js/shop.js"></script>
+    <!-- custom css file link  -->
+    <script src="js/script.js"></script>
+    <!-- global js file -->
+    <script src="./js/globale.js"></script>
+      <!-- newLongin file js -->
+      <script src="./js/newlogin.js"></script>
+    <!-- login person -->
+    <script src="./js/login.js"></script>
+  
+  </body>
+</html>
